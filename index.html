@@ -5,11 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mia Pizza</title>
-    <link rel="stylesheet" href="css/normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <!--Prefetch: carga de antemano la seiguiente pagina a la que el usuario iria-->
+    <link rel="prefetch" href="pages/cursos.html" as="document">
+    <!--Preload-->
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <link rel="preload" href="css/style.css" as="style">
     <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preload" href="img/blog1.jpg" as="image">
 </head>
 <body>
     <header class="header">
@@ -37,7 +45,7 @@
             <h3>Nuestro Blog</h3>
             <article class="entrada">
                 <div class="entrada__imagen">
-                    <img src="img/blog1.jpg" alt="pizzas">
+                    <img loading="lazy" src="img/blog1.jpg" alt="pizzas">
                 </div>
                 <div class="entrada__contenido">
                     <h4 class="no-margin">Variedades de pizzas</h4>
@@ -47,7 +55,7 @@
             </article>
             <article class="entrada">
                 <div class="entrada__imagen">
-                    <img src="img/blog2.jpg" alt="recetas de pizzas">
+                    <img loading="lazy" src="img/blog2.jpg" alt="recetas de pizzas">
                 </div>
                 <div class="entrada__contenido">
                     <h4 class="no-margin">4 Deliciosas recetas de pizzas</h4>
@@ -57,7 +65,7 @@
             </article>
             <article class="entrada">
                 <div class="entrada__imagen">
-                    <img src="img/blog3.jpg" alt="masa con harina integral">
+                    <img loading="lazy" src="img/blog3.jpg" alt="masa con harina integral">
                 </div>
                 <div class="entrada__contenido">
                     <h4 class="no-margin">Beneficios de la pizza con harina integral</h4>
